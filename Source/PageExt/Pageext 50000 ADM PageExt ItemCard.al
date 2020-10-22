@@ -18,7 +18,7 @@ pageextension 50000 "ADM PageExt50000" extends "Item Card"
                         ADMNutritionalInformation: Record "ADM Nutritional Information";
                         tmpCal: Decimal;
                     begin
-                        if not Confirm('Do you want to recalculate the total calories for item %1 ?', false, Rec."No.") then
+                        if not Confirm('Do you want to recalculate the total calories for the item %1 ?', true, Rec."No.") then
                             exit;
 
                         ADMNutritionalInformation.Reset();
@@ -30,14 +30,6 @@ pageextension 50000 "ADM PageExt50000" extends "Item Card"
 
                         Rec."total calories" := (tmpCal * Rec."Net Weight") / 100;
                         Rec.Modify();
-
-
-                        ADMNutritionalInformation.Reset();
-                        ADMNutritionalInformation.SetRange("Item No.", Rec."No.");
-                        ADMNutritionalInformation.CalcSums(Amount);
-                        tmpCal := ADMNutritionalInformation.Amount;
-                        Message('Con l''altro modo il risultato è %1', (tmpCal * Rec."Net Weight") / 100);
-
                     end;
                 }
             }
