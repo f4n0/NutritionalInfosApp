@@ -15,7 +15,7 @@ pageextension 50001 "ADM PageExt50001" extends "Item List" //31
                 ApplicationArea = All;
                 Caption = 'Total Calories';
                 Image = NewSum;
-                ToolTip = 'Show the sum of calories for every item';
+                ToolTip = 'Show the sum of calories for every item.';
                 /*
                 Sommare le calorie di OGNI articolo e con una message mostrare il risultato
                 */
