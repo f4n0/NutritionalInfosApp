@@ -11,7 +11,7 @@ pageextension 50000 "ADM PageExt50000" extends "Item Card"
                 field("total calories"; "total calories")
                 {
                     ApplicationArea = All;
-                    Caption = 'total calories';
+                    Caption = 'Total calories';
 
                     trigger OnAssistEdit()
                     var
