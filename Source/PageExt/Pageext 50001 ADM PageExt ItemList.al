@@ -12,7 +12,7 @@ pageextension 50001 "ADM PageExt50001" extends "Item List" //31
 
         addlast(processing)
         {
-            action("Total Calories")
+            action("ADM Total Calories")
             {
                 ApplicationArea = All;
                 Caption = 'Total Calories';
@@ -23,15 +23,15 @@ pageextension 50001 "ADM PageExt50001" extends "Item List" //31
                     Item: Record Item;
                     TotalCalories: Decimal;
                 begin
-                    if Item.CalcSums("total calories") then begin
-                        TotalCalories := Item."total calories";
+                    if Item.CalcSums("ADM total calories") then begin
+                        TotalCalories := Item."ADM total calories";
                         Message('The sum of calories for every item is %1', TotalCalories);
                     end;
 
                 end;
             }
 
-            action("Summary Values")
+            action("ADM Summary Values")
             {
                 ApplicationArea = All;
                 Caption = 'Summary Values (ADM)';
@@ -39,6 +39,7 @@ pageextension 50001 "ADM PageExt50001" extends "Item List" //31
                 PromotedCategory = Process;
                 PromotedIsBig = true;
                 Image = SuggestWorkMachCost;
+                ToolTip = 'Executes the "Summary Values (ADM)" action.';
 
 
                 trigger OnAction()
@@ -124,6 +125,4 @@ pageextension 50001 "ADM PageExt50001" extends "Item List" //31
         Page.RunModal(page::"ADM Nutritional Info. Summary", TempADMNutritionalInformation);
     end;
 
-    var
-        myInt: Integer;
 }

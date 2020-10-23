@@ -13,13 +13,15 @@ page 50001 "ADM Nutr. Info Factbox"
         {
             repeater(Group)
             {
-                field("Nutritional Type"; "Nutritional Type")
+                field("Nutritional Type"; Rec."Nutritional Type")
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the "Nutritional Information Type" field.';
                 }
-                field(Amount; Amount)
+                field(Amount; Rec.Amount)
                 {
                     ApplicationArea = All;
+                    ToolTip = 'Specifies the value of the "Amount" field.';
                     //FieldPropertyName = FieldPropertyValue;
                 }
 

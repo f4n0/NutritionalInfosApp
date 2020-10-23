@@ -24,7 +24,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table ADM Nutritional Information - Field Item Description 2 - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2461171155 - Field 1795840831 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Nutritional Type</source>
+          <source>Nutritional Information Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table ADM Nutritional Information - Field Nutritional Type - Property Caption</note>
         </trans-unit>
@@ -38,60 +38,120 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ADM Nutritional Info. Summary - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 3851049027 - Control 1795840831 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Nutritional Information Type field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADM Nutritional Info. Summary - Control Nutritional Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3851049027 - Control 636392376 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Amount field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADM Nutritional Info. Summary - Control Amount - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 6627198 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Nutritional Infos</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ADM Nutritional Informations - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 6627198 - Control 568743302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the "Item No." field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADM Nutritional Informations - Control Item No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 6627198 - Control 1957550397 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the "Item description" field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADM Nutritional Informations - Control Item description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 6627198 - Control 227789787 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the "Item Description 2" field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADM Nutritional Informations - Control Item description 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 6627198 - Control 1795840831 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the "Nutritional Information Type" field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADM Nutritional Informations - Control Nutritional Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 6627198 - Control 636392376 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the "Amount" field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADM Nutritional Informations - Control Amount - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3909880748 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Nutritional Info Factbox</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ADM Nutr. Info Factbox - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 4156066953 - Control 1546028436 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+        <trans-unit id="Page 3909880748 - Control 1795840831 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the "Nutritional Information Type" field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADM Nutr. Info Factbox - Control Nutritional Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3909880748 - Control 636392376 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the "Amount" field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ADM Nutr. Info Factbox - Control Amount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4156066953 - Control 1909642108 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Nutritional Infos</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50000 - Control NutritionalInfos - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50000 - Control ADM NutritionalInfos - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 4156066953 - Control 3969988570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+        <trans-unit id="PageExtension 4156066953 - Control 1716913698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Total calories</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50000 - Control total calories - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50000 - Control ADM total calories - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4156066953 - Control 1716913698 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Specifies the value of the "Total calories" field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50000 - Control ADM total calories - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 4156066953 - Control 3909880748 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Nutritional Infos</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50000 - Control ADM Nutr. Info Factbox - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 4156066953 - Action 2536215613 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+        <trans-unit id="PageExtension 4156066953 - Action 2522785157 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Item Nutritional Infos</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50000 - Action NutritionalInfo - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50000 - Action ADM NutritionalInfo - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 4156066953 - Action 126328114 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+        <trans-unit id="PageExtension 4156066953 - Action 3142568170 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Show Nutritional Infos</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50000 - Action Nutritionals - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50000 - Action ADM Nutritionals - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 498796274 - Action 1435516698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
+        <trans-unit id="PageExtension 4156066953 - Action 3142568170 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Executes the "Show Nutritional Infos" action.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50000 - Action ADM Nutritionals - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 498796274 - Action 3334773474 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
           <source>Total Calories</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50001 - Action Total Calories - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50001 - Action ADM Total Calories - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 498796274 - Action 1435516698 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
+        <trans-unit id="PageExtension 498796274 - Action 3334773474 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
           <source>Show the sum of calories for every item.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50001 - Action Total Calories - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50001 - Action ADM Total Calories - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 498796274 - Action 4185398296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
+        <trans-unit id="PageExtension 498796274 - Action 1420041040 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
           <source>Summary Values (ADM)</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50001 - Action Summary Values - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50001 - Action ADM Summary Values - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2587593718 - Field 3969988570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+        <trans-unit id="PageExtension 498796274 - Action 1420041040 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
+          <source>Executes the "Summary Values (ADM)" action.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension ADM PageExt50001 - Action ADM Summary Values - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2587593718 - Field 1716913698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Total Calories</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ADM TableExt50000 - Field total calories - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ADM TableExt50000 - Field ADM total calories - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 1587691069 - EnumValue 1138956292 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Fats</source>

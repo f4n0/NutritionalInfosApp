@@ -13,34 +13,39 @@ page 50000 "ADM Nutritional Informations"
         {
             repeater(Group)
             {
-                field("Item No."; "Item No.")
+                field("Item No."; Rec."Item No.")
                 {
                     ApplicationArea = All;
                     StyleExpr = tmpStyle;
+                    ToolTip = 'Specifies the value of the "Item No." field.';
                 }
-                field("Item description"; "Item description")
+                field("Item description"; Rec."Item description")
                 {
                     ApplicationArea = All;
                     StyleExpr = tmpStyle;
+                    ToolTip = 'Specifies the value of the "Item description" field.';
                     //FieldPropertyName = FieldPropertyValue;
                 }
-                field("Item description 2"; "Item description 2")
+                field("Item description 2"; Rec."Item description 2")
                 {
                     ApplicationArea = All;
                     StyleExpr = tmpStyle;
+                    ToolTip = 'Specifies the value of the "Item Description 2" field.';
                     //FieldPropertyName = FieldPropertyValue;
                 }
-                field("Nutritional Type"; "Nutritional Type")
+                field("Nutritional Type"; Rec."Nutritional Type")
                 {
                     ApplicationArea = All;
                     StyleExpr = tmpStyle;
+                    ToolTip = 'Specifies the value of the "Nutritional Information Type" field.';
                     //FieldPropertyName = FieldPropertyValue;
                 }
 
-                field(Amount; Amount)
+                field(Amount; Rec.Amount)
                 {
                     ApplicationArea = All;
                     StyleExpr = tmpStyle;
+                    ToolTip = 'Specifies the value of the "Amount" field.';
                     //FieldPropertyName = FieldPropertyValue;
                 }
 
@@ -56,21 +61,10 @@ page 50000 "ADM Nutritional Informations"
     {
         area(Processing)
         {
-            action(ActionName)
-            {
-                ApplicationArea = All;
-
-                trigger OnAction();
-                begin
-
-                end;
-            }
         }
     }
 
     trigger OnAfterGetRecord()
-    var
-        myInt: Integer;
     begin
         tmpStyle := 'Favorable';
     end;

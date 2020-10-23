@@ -13,16 +13,16 @@ page 50002 "ADM Nutritional Info. Summary"
         {
             repeater(Group)
             {
-                field("Nutritional Type"; "Nutritional Type")
+                field("Nutritional Type"; Rec."Nutritional Type")
                 {
                     ApplicationArea = All;
-                    //FieldPropertyName = FieldPropertyValue;
+                    ToolTip = 'Specifies the value of the Nutritional Information Type field';
                 }
 
-                field(Amount; Amount)
+                field(Amount; Rec.Amount)
                 {
                     ApplicationArea = All;
-                    //FieldPropertyName = FieldPropertyValue;
+                    ToolTip = 'Specifies the value of the Amount field';
                 }
 
             }
