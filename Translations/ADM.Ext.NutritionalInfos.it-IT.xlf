@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file datatype="xml" source-language="en-US" target-language="it-IT">
+    <body>
+      <group id="body">
+        <trans-unit id="Enum 1587691069 - EnumValue 1138956292 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Fats</source>
+          <target>Grassi</target>
+        </trans-unit>
+        <trans-unit id="Enum 1587691069 - EnumValue 1257317196 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Proteins</source>
+          <target>Proteine</target>
+        </trans-unit>
+        <trans-unit id="Enum 1587691069 - EnumValue 1781436203 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Sugars</source>
+          <target>Zuccheri</target>
+        </trans-unit>
+        <trans-unit id="Enum 1587691069 - EnumValue 837068723 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Carbohydrates</source>
+          <target>Carboidrati</target>
+        </trans-unit>
+        <trans-unit id="Page 3851049027 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Nutritional Infos</source>
+          <target>Informazioni nutrizionali</target>
+        </trans-unit>
+        <trans-unit id="Page 3909880748 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Nutritional Info Factbox</source>
+          <target>Dettaglio informazioni nutrizionali</target>
+        </trans-unit>
+        <trans-unit id="Page 6627198 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Nutritional Infos</source>
+          <target>Informazioni nutrizionali</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 4156066953 - Action 126328114 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Show Nutritional Infos</source>
+          <target>Mostra informazioni nutrizionali</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 4156066953 - Action 2536215613 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Item Nutritional Infos</source>
+          <target>Informazioni nutrizionali sull'articolo</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 4156066953 - Control 1546028436 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Nutritional Infos</source>
+          <target>Informazioni nutrizionali</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 4156066953 - Control 3909880748 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Nutritional Infos</source>
+          <target>Informazioni nutrizionali</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 4156066953 - Control 3969988570 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Total calories</source>
+          <target>Calorie totali</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 498796274 - Action 1435516698 - Property 1295455071" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Show the sum of calories for every item.</source>
+          <target>Mostra la somma delle calorie per ogni articolo.</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 498796274 - Action 1435516698 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Total Calories</source>
+          <target>Calorie totali</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 498796274 - Action 4185398296 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Summary Values (ADM)</source>
+          <target>Valori di riepilogo (ADM)</target>
+        </trans-unit>
+        <trans-unit id="Table 2461171155 - Field 1795840831 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Nutritional Type</source>
+          <target>Tipo nutrizionale</target>
+        </trans-unit>
+        <trans-unit id="Table 2461171155 - Field 1957550397 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Item description</source>
+          <target>Descrizione articolo</target>
+        </trans-unit>
+        <trans-unit id="Table 2461171155 - Field 3056944571 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Item Description 2</source>
+          <target>Descrizione Articolo 2</target>
+        </trans-unit>
+        <trans-unit id="Table 2461171155 - Field 568743302 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Item No.</source>
+          <target>Nr. articolo</target>
+        </trans-unit>
+        <trans-unit id="Table 2461171155 - Field 636392376 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Amount</source>
+          <target>Quantità</target>
+        </trans-unit>
+        <trans-unit id="Table 2461171155 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Nutritional Informations</source>
+          <target>Informazioni nutrizionali</target>
+        </trans-unit>
+        <trans-unit id="TableExtension 2587593718 - Field 3969988570 - Property 2879900210" translate="yes" size-unit="char" xml:space="preserve">
+          <source>Total Calories</source>
+          <target>Calorie totali</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

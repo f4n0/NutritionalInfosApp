@@ -30,8 +30,99 @@ pageextension 50001 "ADM PageExt50001" extends "Item List" //31
 
                 end;
             }
+
+            action("Summary Values")
+            {
+                ApplicationArea = All;
+                Caption = 'Summary Values (ADM)';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                Image = SuggestWorkMachCost;
+
+
+                trigger OnAction()
+                var
+                    TempADMNutritionalInformation: Record "ADM Nutritional Information" temporary;
+                    ADMNutritionalInformation: Record "ADM Nutritional Information";
+                    tmpAmount: Decimal;
+                begin
+                    ADMNutritionalInformation.Reset();
+                    ADMNutritionalInformation.SetRange("Nutritional Type", ADMNutritionalInformation."Nutritional Type"::Sugars);
+                    if ADMNutritionalInformation.CalcSums(Amount) then begin
+                        tmpAmount := ADMNutritionalInformation.Amount;
+
+                        TempADMNutritionalInformation.Init();
+                        TempADMNutritionalInformation."Nutritional Type" := TempADMNutritionalInformation."Nutritional Type"::Sugars;
+                        TempADMNutritionalInformation."Amount" := tmpAmount;
+                        TempADMNutritionalInformation.Insert();
+                    end;
+
+                    ADMNutritionalInformation.Reset();
+                    ADMNutritionalInformation.SetRange("Nutritional Type", ADMNutritionalInformation."Nutritional Type"::Carbohydrates);
+                    if ADMNutritionalInformation.CalcSums(Amount) then begin
+                        tmpAmount := ADMNutritionalInformation.Amount;
+
+                        TempADMNutritionalInformation.Init();
+                        TempADMNutritionalInformation."Nutritional Type" := TempADMNutritionalInformation."Nutritional Type"::Carbohydrates;
+                        TempADMNutritionalInformation."Amount" := tmpAmount;
+                        TempADMNutritionalInformation.Insert();
+                    end;
+
+                    ADMNutritionalInformation.Reset();
+                    ADMNutritionalInformation.SetRange("Nutritional Type", ADMNutritionalInformation."Nutritional Type"::Fats);
+                    if ADMNutritionalInformation.CalcSums(Amount) then begin
+                        tmpAmount := ADMNutritionalInformation.Amount;
+
+                        TempADMNutritionalInformation.Init();
+                        TempADMNutritionalInformation."Nutritional Type" := TempADMNutritionalInformation."Nutritional Type"::Fats;
+                        TempADMNutritionalInformation."Amount" := tmpAmount;
+                        TempADMNutritionalInformation.Insert();
+                    end;
+
+
+                    ADMNutritionalInformation.Reset();
+                    ADMNutritionalInformation.SetRange("Nutritional Type", ADMNutritionalInformation."Nutritional Type"::Proteins);
+                    if ADMNutritionalInformation.CalcSums(Amount) then begin
+                        tmpAmount := ADMNutritionalInformation.Amount;
+
+                        TempADMNutritionalInformation.Init();
+                        TempADMNutritionalInformation."Nutritional Type" := TempADMNutritionalInformation."Nutritional Type"::Proteins;
+                        TempADMNutritionalInformation."Amount" := tmpAmount;
+                        TempADMNutritionalInformation.Insert();
+                    end;
+
+                    //Page.RunModal(page::"ADM Nutritional Informations", TempADMNutritionalInformation);
+                    Page.RunModal(page::"ADM Nutritional Info. Summary", TempADMNutritionalInformation);
+                    MyProcedure();
+                end;
+            }
         }
     }
+
+    local procedure MyProcedure()
+    var
+        TempADMNutritionalInformation: Record "ADM Nutritional Information" temporary;
+        ADMNutritionalInformation: Record "ADM Nutritional Information";
+        tmpAmount: Decimal;
+        ADMNutritionalInfoType: Enum "ADM Nutritional Info Type";
+        CurrentEnum: Integer;
+    begin
+        foreach CurrentEnum in ADMNutritionalInfoType.Ordinals() do begin
+            ADMNutritionalInformation.Reset();
+            ADMNutritionalInformation.SetRange("Nutritional Type", "ADM Nutritional Info Type".FromInteger(CurrentEnum));
+            if ADMNutritionalInformation.CalcSums(Amount) then begin
+                tmpAmount := ADMNutritionalInformation.Amount;
+
+                TempADMNutritionalInformation.Init();
+                TempADMNutritionalInformation."Nutritional Type" := "ADM Nutritional Info Type".FromInteger(CurrentEnum);
+                TempADMNutritionalInformation."Amount" := tmpAmount;
+                TempADMNutritionalInformation.Insert();
+            end;
+        end;
+
+        Page.RunModal(page::"ADM Nutritional Info. Summary", TempADMNutritionalInformation);
+    end;
 
     var
         myInt: Integer;

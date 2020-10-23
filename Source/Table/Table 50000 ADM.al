@@ -17,7 +17,7 @@ table 50000 "ADM Nutritional Information"
             begin
                 item.Get(Rec."Item No.");
                 Rec."Item description" := item.Description;
-                rec.Modify();
+                //rec.Modify();
             end;
         }
 
@@ -40,6 +40,7 @@ table 50000 "ADM Nutritional Information"
         field(40; "Nutritional Type"; Enum "ADM Nutritional Info Type")
         {
             DataClassification = ToBeClassified;
+            Caption = 'Nutritional Information Type';
         }
 
         field(50; "Amount"; Decimal)
@@ -56,6 +57,8 @@ table 50000 "ADM Nutritional Information"
             Clustered = true;
         }
     }
+
+
 
 
 }
