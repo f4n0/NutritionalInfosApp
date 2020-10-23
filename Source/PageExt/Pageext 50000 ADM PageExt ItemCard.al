@@ -86,7 +86,7 @@ pageextension 50000 "ADM PageExt50000" extends "Item Card"
                                 TotCal += ADMNutritionalInfo.Amount;
                             until ADMNutritionalInfo.Next() = 0;
 
-                        locitem.Get(locitem."No.");
+                        locitem.Get(Rec."No.");
                         locitem."ADM total calories" := TotCal;
                         locitem.Modify();
 
