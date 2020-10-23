@@ -5,20 +5,21 @@ pageextension 50000 "ADM PageExt50000" extends "Item Card"
     {
         addlast(content)
         {
-            group(NutritionalInfos)
+            group("ADM NutritionalInfos")
             {
                 Caption = 'Nutritional Infos';
-                field("total calories"; "total calories")
+                field("ADM total calories"; Rec."ADM total calories")
                 {
                     ApplicationArea = All;
                     Caption = 'Total calories';
+                    ToolTip = 'Specifies the value of the "Total calories" field.';
 
                     trigger OnAssistEdit()
                     var
                         ADMNutritionalInformation: Record "ADM Nutritional Information";
                         tmpCal: Decimal;
                     begin
-                        if not Confirm('Do you want to recalculate the total calories for item %1 ?', false, Rec."No.") then
+                        if not Confirm('Do you want to recalculate the total calories for the item %1 ?', true, Rec."No.") then
                             exit;
 
                         ADMNutritionalInformation.Reset();
@@ -28,16 +29,8 @@ pageextension 50000 "ADM PageExt50000" extends "Item Card"
                                 tmpCal += ADMNutritionalInformation.Amount;
                             until ADMNutritionalInformation.Next() = 0;
 
-                        Rec."total calories" := (tmpCal * Rec."Net Weight") / 100;
+                        Rec."ADM total calories" := (tmpCal * Rec."Net Weight") / 100;
                         Rec.Modify();
-
-
-                        ADMNutritionalInformation.Reset();
-                        ADMNutritionalInformation.SetRange("Item No.", Rec."No.");
-                        ADMNutritionalInformation.CalcSums(Amount);
-                        tmpCal := ADMNutritionalInformation.Amount;
-                        Message('Con l''altro modo il risultato è %1', (tmpCal * Rec."Net Weight") / 100);
-
                     end;
                 }
             }
@@ -61,10 +54,10 @@ pageextension 50000 "ADM PageExt50000" extends "Item Card"
         addlast(navigation)
         {
 
-            group(NutritionalInfo)
+            group("ADM NutritionalInfo")
             {
                 Caption = 'Item Nutritional Infos';
-                action(Nutritionals)
+                action("ADM Nutritionals")
                 {
                     ApplicationArea = All;
                     Caption = 'Show Nutritional Infos';
@@ -72,28 +65,29 @@ pageextension 50000 "ADM PageExt50000" extends "Item Card"
                     //PromotedCategory = Process;
                     //PromotedIsBig = true;
                     Image = RelatedInformation;
+                    ToolTip = 'Executes the "Show Nutritional Infos" action.';
                     trigger OnAction()
                     var
                         ADMNutritionalInfo: Record "ADM Nutritional Information";
+                        locitem: Record item;
                         ADMNutritionalInfoPage: Page "ADM Nutritional Informations";
                         TotCal: Decimal;
-                        locitem: Record item;
                     begin
 
-                        ADMNutritionalInfo.SetRange("Item No.", "No.");
+                        ADMNutritionalInfo.SetRange("Item No.", Rec."No.");
                         ADMNutritionalInfoPage.SetTableView(ADMNutritionalInfo);
                         ADMNutritionalInfoPage.RunModal();
 
                         TotCal := 0;
                         ADMNutritionalInfo.Reset();
-                        ADMNutritionalInfo.SetRange("Item No.", "No.");
+                        ADMNutritionalInfo.SetRange("Item No.", Rec."No.");
                         if ADMNutritionalInfo.FindSet() then
                             repeat
                                 TotCal += ADMNutritionalInfo.Amount;
                             until ADMNutritionalInfo.Next() = 0;
 
-                        locitem.Get("No.");
-                        locitem."total calories" := TotCal;
+                        locitem.Get(locitem."No.");
+                        locitem."ADM total calories" := TotCal;
                         locitem.Modify();
 
 

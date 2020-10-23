@@ -1,11 +1,11 @@
-page 50001 "ADM Nutr. Info Factbox"
+page 50002 "ADM Nutritional Info. Summary"
 {
-    Caption = 'Nutritional Info Factbox';
-    PageType = ListPart;
-    //UsageCategory = Lists;
-    //ApplicationArea = All;
+    Caption = 'Nutritional Infos';
+    PageType = List;
+    ApplicationArea = All;
+    UsageCategory = Lists;
     SourceTable = "ADM Nutritional Information";
-    //SourceTableView =
+
 
     layout
     {
@@ -16,19 +16,20 @@ page 50001 "ADM Nutr. Info Factbox"
                 field("Nutritional Type"; Rec."Nutritional Type")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the "Nutritional Information Type" field.';
+                    ToolTip = 'Specifies the value of the Nutritional Information Type field';
                 }
+
                 field(Amount; Rec.Amount)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the value of the "Amount" field.';
-                    //FieldPropertyName = FieldPropertyValue;
+                    ToolTip = 'Specifies the value of the Amount field';
                 }
 
             }
         }
+        area(Factboxes)
+        {
 
+        }
     }
-
-
 }
