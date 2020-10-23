@@ -7,7 +7,7 @@ table 50000 "ADM Nutritional Information"
     {
         field(1; "Item No."; code[20])
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
             Caption = 'Item No.';
             TableRelation = item."No.";
 
@@ -17,13 +17,13 @@ table 50000 "ADM Nutritional Information"
             begin
                 item.Get(Rec."Item No.");
                 Rec."Item description" := item.Description;
-                rec.Modify();
+                //rec.Modify();
             end;
         }
 
-        field(20; "Item description"; Text[50])
+        field(20; "Item description"; Text[100])
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
             Caption = 'Item description';
         }
 
@@ -39,11 +39,13 @@ table 50000 "ADM Nutritional Information"
 
         field(40; "Nutritional Type"; Enum "ADM Nutritional Info Type")
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
+            Caption = 'Nutritional Information Type';
         }
 
         field(50; "Amount"; Decimal)
         {
+            DataClassification = CustomerContent;
             Caption = 'Amount';
         }
 
@@ -56,6 +58,8 @@ table 50000 "ADM Nutritional Information"
             Clustered = true;
         }
     }
+
+
 
 
 }
